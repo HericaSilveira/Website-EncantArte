@@ -1,39 +1,9 @@
-.header__menu--ListStyleType{
-	list-style-type: none;
-	background-color: none;
-	text-align: center;
-	font-family: 'Open Sans';
-	text-transform:uppercase;
-	font-color:black;
-}
-.header__menu--display{
-	display: inline-block;
-	position:relative;
-	float: center;
-	width: 20%;
-	font-size:80%;
-	font-color:black;
-	font-weight:bolder;
-}
-.header__menu--position{
-	position:absolute;
-	display: none;
-}
-.header__menu--DisplayBlock{
-	display: block;
-	font-weight:bold;
-	font-size:100%;
-}
-ul li:hover ul{
-	display: block;
-	width: 75%;
-}
 .listaindex{
 	list-style: none;
 	display: inline-block;
 	font-size: 70%;
 	font-weight: bold;
-	font-family: Arial, sans-serif;
+	font-family: 'Open Sans';
 	text-transform: uppercase;
 	text-align: center;
 	color: black;
@@ -42,7 +12,6 @@ ul li:hover ul{
 .listaindex1{
 	display: block;
 	font-size: 11px;
-	font-family: Arial, sans-serif;
 	font-weight: lighter;
 	color:grey;
 	text-transform: capitalize;
@@ -51,7 +20,7 @@ ul li:hover ul{
 
 $main__h1--fontsize: 20px;
 $main__h1--textalign: left;
-$main__h1--fontweight: bolder;
+$main__h1--fontweight: light;
 
 h5{
 	font-size: $main__h1--fontsize;
@@ -76,8 +45,19 @@ body{
 }
 footer{
 	text-align: center;
-	padding-top: 100px;
 }
+.footer__logos{
+	width: 50px;
+	height: 50px;
+	justify-content: center;
+}
+
+A:link {color: black; font-family: 'Open Sans'; text-decoration: none }
+A:hover {color: black; font-family: 'Open Sans'; text-decoration: none }
+A:visited {color: black; font-family: 'Open Sans'; text-decoration: none }
+
+
+
 @mixin mixinh1 ($font){
 	font-family: $font;
 }
@@ -97,18 +77,13 @@ h2{
 	word-spacing:10px;
 	color: darksalmon;
 }
-body{
-background-color: white;
-background-image: url("Imagenes/Fondo-web.jpg");
-background-size: cover;
-}
-img:hover{
-	transform: rotate(5deg);
-}
 .d--flex{
 	display: flex;
 	justify-content: center;
 	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-left: 2%;
+	margin-right: 2%;
 }
 p{
 	font-family: 'Open Sans';
@@ -118,15 +93,13 @@ p{
 	margin-left: 20%;
 	margin-right: 20%;
 }
+
 h4{
 	font-family: 'Open Sans';
 	font-weight: bolder;
 	font-style: italic;
 	text-align: center;
 	text-transform: uppercase;
-}
-header{
-	margin-top: 50px;
 }
 .main__text--div{
 	margin-top: 5%;
@@ -140,13 +113,16 @@ header{
 }
 form{
 	margin-left: 18%;
+	margin-bottom: 5%;
+	margin-top: 3%;
 	border-style: solid;
+	border-width: 2px;
 	font-family: 'Open Sans';
 	font-size: 15px;
 	text-transform: uppercase;
 	font-weight:lighter;
 	text-align: center;
-	line-height: 1.8;
+	line-height: 2.8;
 }
 .d-flex{
 	display: flex;
@@ -165,9 +141,18 @@ h6{
 	font-weight: bolder;
 }
 td{
-	text-align: center;
 	font-family: 'Open Sans';
 }
 table{
 	margin-top: 60px;
+	margin-bottom: 5%;
+	font-family: 'Open Sans';
+	text-align: center;
+}
+ul{
+	list-style: none;
+	margin-left: 2%;
+	margin-right: 2%;
+	font-family: 'Open Sans'
+	font-size:15px;
 }
